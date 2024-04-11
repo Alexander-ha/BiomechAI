@@ -1,0 +1,10 @@
+## Framework purpose 
+
+## Framework tools 
+There are many good tools which can help you in solving your 
+tasks. As a main ability, you can put in Lagrangians, Hamiltonians,
+or just your model to automatically determine generalized coordinates, and equations. 
+
+Your next step can be achieved as you will choose model constraints, and determine main idea of 
+model solutions. You can specify such interfaces like 'Equilibrium', 'Dynamics', 'Kinematics', 'Collisions' and 
+many others.
