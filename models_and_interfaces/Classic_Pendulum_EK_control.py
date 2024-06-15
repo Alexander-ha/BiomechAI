@@ -44,7 +44,7 @@ class Classic_Pendulum_EK_control():
     if self.flag == 1:
       force = 0
     dth_dt = w
-    dw_dt = (force + generalized_force(th) - self.m*self.L*self.g*np.sin(th)) / (self.M + self.m)
+    dw_dt = (force + self.generalized_force(th) - self.m*self.L*self.g*np.sin(th)) / (self.M + self.m)
     self.prev_error = error
     return np.array([dth_dt, dw_dt])
 
