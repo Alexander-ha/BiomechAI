@@ -1,0 +1,78 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: rgb(121, 12, 12); /* Установка однотонного фона */
+  }
+  
+  /* Стилизация панели инструментов */
+  .mat-toolbar {
+    background: rgb(26, 18, 18);
+    color: white;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Стилизация контейнера изображений */
+  .image-container {
+    position: relative;
+    max-width: 100%;
+    background-color: rgb(26, 18, 18); /* Темный фон */
+    margin: 0px auto;
+  }
+  
+  .image-container img.background {
+    width: 100%;
+    height: auto;
+    filter: brightness(50%);
+    position: relative;
+    z-index: 1;
+  }
+  
+  .image-container img.logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    max-width: 30%; /* Уменьшение размера логотипа */
+  }
+  
+  .logo-text {
+    position: absolute;
+    bottom: 500px; /* Позиционирование текста внизу изображения */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 3;
+    color: white;
+    font-size: 18px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Добавление тени для лучшей читаемости */
+  }
+  
+  /* Стилизация видео-компонента */
+  app-video {
+    display: block;
+    max-width: 800px;
+    margin: 0px auto;
+    border: 0px solid white;
+    border-radius: 0px;
+  }
+  
+  /* Дополнительные стили */
+  .example-icon img {
+    width: 100px; /* Установка фиксированного размера для иконок */
+    margin-top: -50px; /* Корректировка положения иконок */
+  }
+  
+  .example-spacer {
+    flex-grow: 1;
+  }
+  
+  .title-center {
+    text-align: center;
+  }
+  
+  /* Удаление неиспользуемых стилей */
+  /* .example-fill-remaining-space { ... } */
